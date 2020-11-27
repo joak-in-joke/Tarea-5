@@ -4,12 +4,12 @@ import re
 
 
 conn = imaplib.IMAP4_SSL("imap.gmail.com", 993) 
-gmail_user = 'joaquin.cancino@mail.udp.cl' 
-gmail_pwd = 'udp2016.3099' 
+gmail_user = 'xxxxxx.xxxxx@mail.udp.cl' 
+gmail_pwd = 'xxxxxxxx' 
 
 exp_reg = "[0-9a-f]{12}4[0-9a-f]{19}@373$"
 adress =  "hello@sonicwall.com"
-date_exp = "01/01/2016 00:00:00" #el correo mas antiguo es del 2019 y cumple con la expresion regular
+date_exp = "01/01/2016 00:00:00" #el correo mas antiguo es del 2018 y cumple con la expresion regular
 
 conn.login(gmail_user, gmail_pwd) 
 
